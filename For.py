@@ -8,7 +8,9 @@ class For:
 
     def usoFor(self):
 # ciclo repetitivo de incremento o decremento que se ejecuta por verdadero 
+        nombre= 'Emanuelito'
         datos=["Emanuel" ,25, True]
+        #poss    0         1    2
         numeros=(2,5.4,3,1,7)
         docente={'nombre':'Emanuel','edad':25,'facu':'faci'}
         listaNotas=[(30,40),(20,40),(50,40)]
@@ -34,18 +36,39 @@ class For:
         # for i in  range(12,3,-3): #numero de rango (12,9,6)
         #     print('for',i,end="")   
 
-        lon = len(datos)
-        for pos in range(lon):
-            print(pos,datos[pos])  
+        # lon = len(datos)
+        # for pos in range(lon):
+        #     print(pos,datos[pos])  
         #     lon = len(numeros)
         # for pos in range(lon):
-        #     print(pos,numeros[pos])
-        #     lon = len(docente)
+        #     print('posicion:',pos,'El numero es:',numeros[pos])
+        # lon = len(nombre)
         # for pos in range(lon):
-        #     print(pos,docente[pos])
-        #     lon = len(listaAlumnos)
+        #     if pos%2 == 0 and pos!=0:
+        #        print(pos,nombre[pos])
+        # lon = len(listaAlumnos)
         # for pos in range(lon):
-        #     print(pos,listaAlumnos[pos])    
+        #     print(pos,listaAlumnos[pos])
+        # lon = len(listaNotas)
+        # for pos in range(lon):
+        #     print(pos,listaNotas[pos])  
+        
+        #Vocal= ('a','e','i','o','u')
+        # for elemen in nombre:
+            
+        #        print(elemen,end="")   
+        # for elemen in datos:
+            
+        #        print(elemen,end="") 
+        # lon = len(datos)
+        # for pos in range(lon):
+        #     print(pos,datos[pos])
+
+        # for pos,valor in enumerate(datos):           
+        #     print(pos,valor)
+
+        for clave,valor in docente.items():           
+            print(clave,valor)
 
 bucle= For()
 bucle.usoFor()
