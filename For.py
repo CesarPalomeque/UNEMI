@@ -13,7 +13,7 @@ class For:
         #poss    0         1    2
         numeros=(2,5.4,3,1,7)
         docente={'nombre':'Emanuel','edad':25,'facu':'faci'}
-        listaNotas=[(30,40),(20,40),(50,40)]
+        listaNotas=[(30,40),(20,40,30),(50,40)]
         listaAlumnos=[{"nombre":"cesar","final":80},{"nombre":"rodolfo","final":56},{"nombre":"pancraseo","final":71}]
 
     # rango ([inicio=0], limite, [inc/dec=1]). genera un rango de valores desde un valor inicial a un valor final 
@@ -67,8 +67,34 @@ class For:
         # for pos,valor in enumerate(datos):           
         #     print(pos,valor)
 
-        for clave,valor in docente.items():           
-            print(clave,valor)
+        # for clave,valor in docente.items():           
+        #     print(clave,valor)
+        # print(listaNotas)
+
+        # for notas in listaNotas:
+        #     print("for externo",notas)
+        #     for notas in notas:
+        #         print(notas,end= "  ")  
+        #     print("saliendo del for interno")     
+        # print(listaNotas)
+        # print(listaNotas)
+
+        # for notas in listaNotas:
+        #     acum=0
+        #     for nota in notas:
+        #         acum=acum+nota
+        #         print(notas,end= "  ")  
+        #     print(acum/len(notas),   end="     saliendo del for interno con el promedio")   
+
+
+        print("n\Diccionario alumnos")
+
+        for alumnos in listaAlumnos:
+            
+            for clave,valor in alumnos.items():
+                
+                print(clave,":",valor,end= "  ")  
+            print(end="     saliendo del for interno ")         
 
 bucle= For()
 bucle.usoFor()
