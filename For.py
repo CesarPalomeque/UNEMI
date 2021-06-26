@@ -85,8 +85,7 @@ class For:
         #         acum=acum+nota
         #         print(notas,end= "  ")  
         #     print(acum/len(notas),   end="     saliendo del for interno con el promedio")   
-
-
+        listaAlumnos=[{"nombre":"cesar","final":80},{"nombre":"rodolfo","final":56},{"nombre":"pancraseo","final":71}]
         print("n\Diccionario alumnos")
 
         for alumnos in listaAlumnos:
