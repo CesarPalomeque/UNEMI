@@ -87,12 +87,16 @@ class For:
         #     print(acum/len(notas),   end="     saliendo del for interno con el promedio")   
         listaAlumnos=[{"nombre":"cesar","final":80},{"nombre":"rodolfo","final":56},{"nombre":"pancraseo","final":71}]
         print("n\Diccionario alumnos")
+        print(listaAlumnos)
+        acum=0
 
         for alumnos in listaAlumnos:
+            print(alumnos)
             
             for clave,valor in alumnos.items():
                 
                 print(clave,":",valor,end= "  ")  
+                acum=acum+valor
             print(end="     saliendo del for interno ")         
 
 bucle= For()
