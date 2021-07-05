@@ -99,5 +99,5 @@ class For:
                 acum=acum+valor
             print(end="     saliendo del for interno ")         
 
-bucle= For()
+bucle = For()
 bucle.usoFor()
