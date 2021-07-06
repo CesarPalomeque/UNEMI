@@ -85,19 +85,46 @@ class For:
         #         acum=acum+nota
         #         print(notas,end= "  ")  
         #     print(acum/len(notas),   end="     saliendo del for interno con el promedio")   
-        listaAlumnos=[{"nombre":"cesar","final":80},{"nombre":"rodolfo","final":56},{"nombre":"pancraseo","final":71}]
-        print("n\Diccionario alumnos")
-        print(listaAlumnos)
-        acum=0
 
-        for alumnos in listaAlumnos:
-            print(alumnos)
+
+        # listaAlumnos=[{"nombre":"cesar","final":80},{"nombre":"juan","final":67},{"nombre":"rodolfo","final":56},{"nombre":"pancraseo","final":71}]
+        # print("n\Diccionario alumnos")
+        # print(listaAlumnos)
+        # acum=0
+
+        # for alumnos in listaAlumnos:
+        #     print(alumnos,len(alumnos))
             
-            for clave,valor in alumnos.items():
+        #     for clave,valor in alumnos.items():
                 
-                print(clave,":",valor,end= "  ")  
-                acum=acum+valor
-            print(end="     saliendo del for interno ")         
+        #         print(clave,":",valor,end= "    ") 
+        #         if clave == "final":
+        #         #if type(valor) == int:
+        #            acum=acum+valor
+        #     print()
+        # print("Promedio",acum/len(listaAlumnos))      
+        # 
+        listaNotas=[(30,40,10,20),(20,40,50),(50,40,10),(10,20)]
+        cont,acum=0,0
+        
+
+        for notas in listaNotas:
+            print(notas)
+            acumparcial=0
+            #contparcial=0
+            for nota in notas:
+                acumparcial +=nota
+                #contparcial +=1
+                
+                #cont=cont+1
+            cont=cont+len(notas)
+            acum=acum+acumparcial    
+            #print("El promedio de esta notas es",acumparcial/contparcial)    
+            print("Totalparcial:{}   promparcial:{}".format(acumparcial,acumparcial/len(notas)))    
+        print("Totalparcial:{}    promparcial:{}".format(acum,acum/cont))  
+              
+
+
 
 bucle = For()
 bucle.usoFor()
