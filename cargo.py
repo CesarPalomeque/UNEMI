@@ -1,7 +1,9 @@
 class Cargo:
-    def __init__(self): 
-        self.__codigo=99
-        self.descripcion= "Sin cargo"
+    secuencia=0
+    def __init__(self,des="SIN CARGO"): 
+        Cargo.secuencia=Cargo.secuencia+1
+        self.codigo=Cargo.secuencia
+        self.descripcion=des
 
 # cargo1= Cargo()        
 # print(cargo1.codigo,cargo1.descripcion)
@@ -12,12 +14,14 @@ class Cargo:
 # cargo3= Cargo() 
 # cargo3.descripcion="conserje"       
 # print(cargo3.codigo,cargo3.descripcion)
-cargo1= Cargo()        
-print("cargo1",cargo1.descripcion)
-cargo2= Cargo()
 
-cargo2.descripcion="Docente"
-print("cargo2",cargo2.descripcion)
-cargo3= Cargo() 
-cargo3.descripcion="conserje"       
-print("cargo3",cargo3.descripcion)
+if __name__ == "__main__":
+    cargo1= Cargo()        
+    print("cargo1",cargo1.codigo,cargo1.descripcion)
+
+    cargo2= Cargo("Docente")
+    print("cargo2",cargo2.codigo,cargo2.descripcion)
+
+    cargo3= Cargo() 
+    print("cargo3",cargo3.codigo,cargo3.descripcion)
+    print(Cargo.secuencia)
