@@ -40,12 +40,12 @@ ord1 = Ordenar(lista)
 # ord1.recorrerElemento()
 # ord1.recorrerPosicion()
 # ord1.recorrerRange()
-# buscado=5
+# buscado=3
 # resp = ord1.buscar(buscado)
 # if resp != -1: 
-#     print("Numero= {} se encuentra en la Posicion:({}) de la lista: {} ".format(buscado,resp, ord1.lista))
+#     print("Numero= {} se encuentra en la Posicion:({})  de la lista:{} ".format(buscado,resp,ord1.lista))
 # else :
-#     print("Numero= {} no se encuentra en la lista {} ".format(buscado, ord1.lista))
+#     print("Numero= {} no se encuentra en la lista {} ".format(buscado,ord1.lista))
 
 print(ord1.lista)
 ord1.ordenarAsce()
