@@ -2,6 +2,7 @@ class viajes():
 
     def __init__(self):
         pass
+       
 
 
     def usoFor(self):
@@ -14,6 +15,9 @@ class viajes():
         #      if pos%2 == 0 and pos!=0:
         #        print(pos,participantes[pos]) 
                #print(pos,valor)
+
+               
+
               
 bucle= viajes()
 bucle.usoFor()
