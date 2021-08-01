@@ -34,4 +34,4 @@ menu()
 #     1 claculadora
 #     2 numero
 #     3 listas
-#     4 calculos salir ]
+#     4 calculos salir ]ll
