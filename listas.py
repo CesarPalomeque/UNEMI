@@ -27,15 +27,15 @@ class Lista:
             self.lista = self.lista[:pos]+ self.lista[pos+1:]
             return [self.lista,eliminado]
 
-# busca un dato en la lista y retorna la posicion de ese valor en la lista
+## Busca un dato en la lista y retorna la posicion de ese valor en la lista
     def buscar(self,dato):   
         pass  
     
-# busca un dato con el metodo buscar y si no lo encuentra lo inserta en la lista
+## Busca un dato con el metodo buscar y si no lo encuentra lo inserta en la lista
     def insertar(self,dato):  
         pass
 
-# busca el dato con el metodo buscar y si lo encuentra lo elimina de la lista
+## Busca el dato con el metodo buscar y si lo encuentra lo elimina de la lista
     def eliminar(self,dato):  
         pass
 
@@ -46,8 +46,8 @@ class Lista:
 
 
 lista1= Lista()
-lista1.append("Daniel")
-lista1.append(52)
+lista1.append("Emanuel")
+lista1.append(24)
 lista1.append(True)
 lista1.mostrar()
 posicion = int(input("Ingrese posicion para obtener el elemento: "))
